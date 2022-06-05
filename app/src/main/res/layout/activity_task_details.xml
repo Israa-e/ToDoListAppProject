@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adds.TaskDetailsActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/No_Category"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TaskDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/passero_one"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="TaskName"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/deDateTx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/ic_baseline_calendar_month_24"
+        android:fontFamily="@font/passero_one"
+        android:text="    Due Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskDe"
+         />
+
+    <TextView
+        android:id="@+id/deRepeatTx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_baseline_repeat_24"
+        android:fontFamily="@font/passero_one"
+        android:text="Repeat Task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deRemindTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deRemindTx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/passero_one"
+        android:text="    Reminder at"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deTimeTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="@font/passero_one"
+        android:text=" 30/2/2022"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deDateTx"
+        app:layout_constraintEnd_toEndOf="@+id/deDateTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deTimeTx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/green"
+        android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+        android:fontFamily="@font/passero_one"
+        android:text="   Time and Reminder "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deDateTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/passero_one"
+        android:text=" NO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deDateTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/passero_one"
+        android:text=" NO Repeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deRemindTx"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/deTimeAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/passero_one"
+        android:text=" NO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deTimeTx"
+        app:tint="@color/black" />
+</androidx.constraintlayout.widget.ConstraintLayout>
